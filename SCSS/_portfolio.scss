@@ -1,0 +1,31 @@
+.portfolio {
+	padding: 50px 0;
+
+	h2 {
+	}
+
+	.wrap {
+		@include outer-container($md);
+	}
+
+	ul {
+		padding-top: 10px;
+	}
+
+	ul li {
+		font-family: $serif-fontfamily;
+		margin-bottom: 30px;
+		padding: 0 15px;
+		text-align: center;
+
+		a {
+			color: $body-color;
+		}
+
+		@include span-columns(6);
+		@include omega(2n);
+		@include media(max-width $mobile) {
+			@include span-columns(12);
+		}
+	}
+}

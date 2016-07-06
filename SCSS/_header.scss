@@ -1,0 +1,18 @@
+.header {
+	background-color: $primary-color;
+
+	h1 {
+		width: 100%;
+		max-width: 450px;
+		margin: 0 auto;
+		padding: 130px 0;
+
+		@include media(max-width $mobile) {
+			padding: 80px 35px;
+		}
+
+		svg {
+			width: 100%;
+		}
+	}
+}
