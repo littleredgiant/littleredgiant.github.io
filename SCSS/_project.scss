@@ -55,9 +55,11 @@ body.project-open {
 .project-preview {
 	padding: 20px 0;
 	background-color: #292929;
-	
+	min-height: 400px;
+
 	.wrap {
 		@include outer-container($md);
+
 		img {
 			width: 100%;
 		}
