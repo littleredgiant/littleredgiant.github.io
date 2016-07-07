@@ -17,6 +17,11 @@
 	<meta property="og:title"         content="nuudge" />
 	<meta property="og:description"   content="Graphic Designer/Web Designer" />
 	<meta property="og:image"         content="./images/nuudge-share-image.png" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
+
+	<script src="./app/min/app-min.js"></script>
 </head>
 <body>
 <div id="fb-root"></div>
@@ -43,71 +48,60 @@
 			</span>
 		</div>
 	</section>
-	<section class="portfolio">
+	<section class="portfolio" ng-app="portfolio">
 		<div class="wrap">
 			<h2>Work Done</h2>
 			<ul>
 				<li>
-					<a href="">
+					<a href="" ui-sref="project({name: 'huvandhu-label'})">
 						<h3>Huvan'dhu Label</h3>
 						<span>Typography + Illustration</span>
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="" ui-sref="project({name: 'medianet-euro-16'})">
 						<h3>Medianet Euro Challenge '16</h3>
 						<span>Landing Page Design + Development</span>
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="" ui-sref="project({name: 'kangaroo-kids-fvm'})">
 						<h3>Kangaroo Kids Fuvahmulah Website</h3>
 						<span>Web Design + Theme Development</span>
 					</a>
 				</li>
 				<li>
-					<a href="">
-						<h3>Yum's Wedding Card</h3>
-						<span>Card Design Design</span>
-					</a>
-				</li>
-				<li>
-					<a href="">
+					<a href="" ui-sref="project({name: 'skyblu-website'})">
 						<h3>Skyblu Website</h3>
 						<span>Web Design + Theme Development</span>
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="" ui-sref="project({name: 'funaad-road-signs'})">
 						<h3>Funaad Road Signs</h3>
 						<span>Road Sign Board Design</span>
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="" ui-sref="project({name: 'aeonian-website'})">
 						<h3>Aeonian Maldives Website</h3>
 						<span>Web Design + Theme Development</span>
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="" ui-sref="project({name: 'funaad-sports-club-logo'})">
 						<h3>Funaad Sports Club Logo</h3>
 						<span>Logo Design</span>
 					</a>
 				</li>
 				<li>
-					<a href="">
-						<h3>aDhivehiReader Icon</h3>
-						<span>App Icon Design</span>
-					</a>
-				</li>
-				<li>
-					<a href="">
+					<a href="" ui-sref="project({name: 'mall-maldives-logo'})">
 						<h3>MALL Maldives Logo</h3>
 						<span>Logo Design</span>
 					</a>
 				</li>
 			</ul>
+			<div ui-view></div>
 		</div>
 	</section>
 	<footer class="footer">

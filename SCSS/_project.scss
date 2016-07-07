@@ -1,0 +1,102 @@
+.project {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+
+	.content {
+		background-color: #fff;
+		height: 100vh;
+		width: 100vw;
+		overflow-y:scroll;
+		z-index:8888;
+		@include animation(slideInUp 0.5s both ease-in);
+
+		&.out {
+			z-index:9999;
+			@include animation(slideInDown 0.26s both ease-in);
+		}
+	}
+
+	.navigation {
+
+	    button {
+	    	background-color: $primary-color;
+	    	color: #fff;
+		    border: 0;
+		    font-size: 20px;
+		    padding: 10px 0;
+		    width: 100%;
+
+		    &:active,
+		    &:focus {
+		    	outline: 0;
+		    }
+	    }
+	}
+}
+/* fix body height when a project is open */
+body.project-open {
+	height: 100vh;
+	overflow: hidden;
+}
+
+@include keyframes(slideInUp) {
+	from 	{ @include transform(translateY(100%)); }
+	to 		{ @include transform(translateY(0)); }
+}
+@include keyframes(slideInDown) {
+	from 	{ @include transform(translateY(0)); }
+	to 		{ @include transform(translateY(100%)); }
+}
+
+.project-preview {
+	padding: 20px 0;
+	background-color: #292929;
+	
+	.wrap {
+		@include outer-container($md);
+		img {
+			width: 100%;
+		}
+	}
+}
+.project-info {
+	@include outer-container($md);
+
+	margin-top: 20px;
+
+	padding: 0 15px 50px;
+
+	h3 {
+		text-transform: uppercase;
+		margin-bottom: 10px;
+		font-size: 25px;
+	}
+
+	h4 {
+		text-transform: uppercase;
+		margin-bottom: 10px;
+		font-size: 16px;
+	}
+
+	p {
+		font-size: 16px;
+		margin-bottom: 1em;
+		color: $body-color;
+	}
+
+	a {
+		color: #000;
+	}
+
+	.role {
+		margin-bottom: 30px;
+
+		span {
+			display: block;
+		}
+	}
+}

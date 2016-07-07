@@ -1,0 +1,10 @@
+{
+	"title": "Medianet Euro Challenge '16",
+	"content": "<p>Medianet, the cabel TV provider wanted a landing page for their Euro Challenge 2016. They provided the Euro design assets for the year and asked me to create an easy to use layout to collect score predictions from their customers. The page is powered by a PHP script.</p>",
+	"role": [
+		"Landing Page Design",
+		"Development"
+	],
+	"preview": "./projects/medianet-euro-16.jpg",
+	"link": "http://euro.medianet.mv"
+}

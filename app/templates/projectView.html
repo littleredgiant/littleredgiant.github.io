@@ -1,0 +1,22 @@
+<div class="project">
+	<div class="content">
+		<div class="navigation">
+			<button ng-click="back()">Back</button>
+		</div>
+		<div class="project-preview">
+			<div class="wrap">
+				<img src="{{project.preview}}" alt="Preview Image">
+			</div>
+		</div>
+		<div class="project-info">
+			<h3>{{project.title}}</h3>
+			<div ng-bind-html="project.content | sanitize"></div>
+			<h4>Role</h4>
+			<div class="role">
+				<span ng-repeat="role in project.role">{{role}}</span>
+			</div>
+			<h4 ng-if="project.link != ''">Link</h4>
+			<a ng-if="project.link != ''" href="{{project.link}}">{{project.link}}</a>
+		</div>
+	</div>
+</div>
