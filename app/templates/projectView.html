@@ -16,7 +16,7 @@
 				<span ng-repeat="role in project.role">{{role}}</span>
 			</div>
 			<h4 ng-if="project.link != ''">Link</h4>
-			<a ng-if="project.link != ''" href="{{project.link}}">{{project.link}}</a>
+			<a ng-if="project.link != ''" href="{{project.link}}" target="_blank">{{project.link}}</a>
 		</div>
 	</div>
 </div>
