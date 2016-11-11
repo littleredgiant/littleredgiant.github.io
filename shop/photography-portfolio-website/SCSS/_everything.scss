@@ -24,7 +24,8 @@
 	.mouse {
 		position: absolute;
 		bottom: 20px;
-		width: 100vw;
+		left: 0;
+		right: 0;
 
 		> div {
 			width: 25px;
