@@ -1,9 +1,10 @@
 .header {
 	// background: transparent url(./img/lilgirl.jpg) no-repeat;
-	background-size: cover;
+	// background-size: cover;
 	height:100vh;
 	position: relative;
 	padding: 15px;
+	background-image: linear-gradient(to top, #fddb92 0%, #d1fdff 100%);
 
 	.text {
 		max-width: 400px;
