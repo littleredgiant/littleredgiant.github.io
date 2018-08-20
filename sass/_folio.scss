@@ -22,6 +22,17 @@
 					opacity: 1;
 				}
 			}
+
+			&.empty {
+				grid-column: 1/-1;
+				background-color: transparent;
+				text-align: center;
+				padding: 40px 0;
+
+				p {
+					color: #888;
+				}
+			}
 		}
 
 		&__img {
