@@ -392,8 +392,7 @@ hr {
 
 .header {
   width: 100vw;
-  overflow: hidden;
-  font-family: "Raleway", sans-serif; }
+  overflow: hidden; }
   .header h1 {
     display: none; }
   .header svg {
@@ -551,7 +550,6 @@ hr {
 .footer {
   max-width: 1175px;
   margin: 0 auto;
-  font-family: "Raleway", sans-serif;
   font-size: 0.82em;
   font-weight: 300;
   font-style: italic;
