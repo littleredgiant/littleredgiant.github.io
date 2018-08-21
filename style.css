@@ -518,7 +518,7 @@ hr {
     font-weight: 400;
     margin: 0;
     padding: 0; }
-    .about p a {
+    .about p a, .about p strong {
       font-weight: 600; }
   .about--grid {
     display: grid;
