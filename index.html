@@ -12,8 +12,8 @@
 	</script>
 
 	<meta charset="UTF-8">
-		<title>Little Red Giant - Web Designer.</title>
-		<meta name="description" content="Experienced graphic designer, Northumbria Uni & AOD graduate.">
+		<title>Little Red Giant - Web Designer, Front-end Developer. Maldives.</title>
+		<meta name="description" content="Experienced web designer, front-end developer.">
 		<meta name="keywords" content="web, web design, ui, ui design, ui/ux, user interface, user interface design, app, app design, graphic, design, branding, event branding, logo, logo design, brand identity design, advertising, advertisement, art, portfolio, photoshop, illustrator, flash, cs5, cs6, html, freelance, freelancer, northumbria, AOD, Academy of design, designer, web, developer"/>
 		<meta name="robots" content="index, follow">
 		<meta name="author" content="Ahmed Nazeem">
@@ -22,7 +22,7 @@
 		<meta property="og:title" content="Little Red Giant - Web Designer.">
 		<meta property="og:site_name" content="Little Red Giant">
 		<meta property="og:url" content="https://littleredgiant.com">
-		<meta property="og:description" content="Experienced designer, Northumbria Uni & AOD graduate.">
+		<meta property="og:description" content="Experienced web designer, front-end developer.">
 		<meta property="og:type" content="profile">
 		<meta property="og:image" content="./logo.png">
 		<meta property="og:image:type" content="image/jpg">
@@ -92,18 +92,18 @@
 						C857.63,123.245,850.306,116.223,850.306,100.828z"/>
 				</g>
 				</svg>
-			</span>
+			</span><!-- /.header--h1 -->
 			<h2>Designer</h2>
-		</div>
-	</header><!-- //header -->
+		</div><!-- /.header__content -->
+	</header><!-- /.header -->
 
 	<section class="folio">
-		<h2 class="title">Portfolio</h2>
+		<h2 class="title">Portfolio</h2><!-- /.title -->
 
 		<div class="folio--grid">
 			<div class="empty">
 				<p>No projects added yet.</p>
-			</div>
+			</div><!-- /.empty -->
 			<!-- <div>
 				<a href="">
 				<div class="folio--grid__img">
@@ -116,31 +116,63 @@
 				</div>
 				</a>
 			</div> -->
-		</div>
-	</section>
+		</div><!-- /.folio--grid -->
+	</section><!-- /.folio -->
 
 	<section class="workedwith">
-		<h2 class="title">Experience</h2>
+		<h2 class="title">Experience</h2><!-- /.title -->
 		<p>Notable brands I have worked for or had the pleasure to work with.</p>
 
 		<div class="workedwith--grid">
-			<div>Allied Insurance <span>Senior Developer (UI)</span></div>
-			<div>We Are Designers <span>Web Designer/Developer</span></div>
-			<div>HDC <span>Freelance</span></div>
-			<div>RedBull <span>Freelance (Maldives)</span></div>
-			<div>Mihaaru <span>Freelance</span></div>
-			<div>MediaNet <span>Freelance</span></div>
-		</div>
-	</section>
+			<div><label for="worked-allied">Allied Insurance <span>Senior Developer (UI)</span></label></div>
+			<div><label for="worked-wad">We Are Designers <span>Web Designer/Developer</span></label></div>
+			<div><label for="freelance-hdc">HDC <span>Freelance</span></label></div>
+			<div><label for="freelance-rb">RedBull <span>Freelance (Maldives)</span></label></div>
+			<div><label for="freelance-mihaaru">Mihaaru <span>Freelance</span></label></div>
+			<div><label for="freelance-mn">MediaNet <span>Freelance</span></label></div>
+		</div><!-- /.workedwith--grid -->
+	</section><!-- /.workedwith -->
+
+	<section class="workeddetails">
+		<input type="radio" name="workdetails" id="worked-allied">
+		<div class="workeddetails-item">
+			<p>I worked at Allied.mv from 2014 to 2017, starting as a Web Developer and I was a Senior Developer when I left. I worked on UI design and front-end development for their insurance related web apps and mobile app.</p>
+		</div><!-- /.workeddetails-item -->
+
+		<input type="radio" name="workdetails" id="worked-wad">
+		<div class="workeddetails-item">
+			<p>I had the pleasure to work at We Are Designers (Sri Lanka) for a breif period as a Web Designer early in my career. With their multidisciplinary talented staff, I worked on Flash and Wordpress development projects.</p>
+		</div><!-- /.workeddetails-item -->
+
+		<input type="radio" name="workdetails" id="freelance-hdc">
+		<div class="workeddetails-item">
+			<p>When HDC needed an app to help them sell land in Hulhumalé, they approached me to develop a land bidding app.</p>
+		</div><!-- /.workeddetails-item -->
+
+		<input type="radio" name="workdetails" id="freelance-rb">
+		<div class="workeddetails-item">
+			<p>Euro Marketing needed a slide deck design for one of their annual RedBull events. The project involved layout design, illustration and typography.</p>
+		</div><!-- /.workeddetails-item -->
+
+		<input type="radio" name="workdetails" id="freelance-mihaaru">
+		<div class="workeddetails-item">
+			<p>Mihaaru has been a repeat client of mine for their design to html projects. Its a fun experience to work with a fast-paced team.</p>
+		</div><!-- /.workeddetails-item -->
+
+		<input type="radio" name="workdetails" id="freelance-mn">
+		<div class="workeddetails-item">
+			<p>Created a mini site for Euro 2016, and also have helped them with development work and bug fixes on their web apps.</p>
+		</div><!-- /.workeddetails-item -->
+	</section><!-- /.workeddetails -->
 
 	<section class="about">
 		<div class="about--grid">
 			<div>
-				<h2 class="title">About</h2>
+				<h2 class="title">About</h2><!-- /.title -->
 				<p>Hi, I'm Ahmed Nazeem — a freelance web designer and frontend developer. I've worked in-house for Allied.mv, as a user-interface designer / frontend developer and created a uniform visual design system for their web apps and mobile app.<br><br>I have had the opportunity to work as a freelancer for brands like Mihaaru.com on their projects like Dho.mv, World Cup mini site, etc, and helped to bring their designs to life. I have a B.A in Graphic Design from Northumbria University and have been working in the field of design for more than eight years.</p>
 			</div>
 			<div>
-				<h2 class="title">Contact</h2>
+				<h2 class="title">Contact</h2><!-- /.title -->
 				<p>Drop us an email at <strong>&#104;&#101;&#108;&#108;&#111;&#064;&#108;&#105;&#116;&#116;&#108;&#101;&#114;&#101;&#100;&#103;&#105;&#097;&#110;&#116;&#046;&#099;&#111;&#109;</strong> or connect with us on facebook</p>
 				<div class="facebooklinks">
 					<a target="_blank" href="https://www.facebook.com/littleredgiant" title="Like Little Red Giant on facebook.com">
@@ -151,13 +183,13 @@
 							</svg>
 						</span>
 					</a>
-				</div>
+				</div><!-- /.facebooklinks -->
 			</div>
-		</div>
-	</section>
+		</div><!-- /.about--grid -->
+	</section><!-- /.about -->
 	<footer class="footer">
 		Be happy.
-	</footer>
+	</footer><!-- /.footer -->
 	<!-- Load Facebook SDK for JavaScript -->
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {

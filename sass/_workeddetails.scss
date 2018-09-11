@@ -1,0 +1,32 @@
+.workeddetails {
+    max-width: 1175px;
+	margin:0 auto;
+    margin-bottom: 35px;
+
+    .workeddetails-item {
+        display: none;
+        padding: 0 15px;
+        background-color: #fff;
+
+        p {
+            margin: 0;
+            padding: 20px 10px;
+            font-size: 2em;
+            font-weight: 300;
+            color: #333;
+
+            @media (max-width: 549px) {
+                font-size: 22px;
+                text-align: center;
+            }
+        }
+    }
+    
+    input[type="radio"] {
+        display: none;
+
+        &:checked + .workeddetails-item {
+            display: block
+        }
+    }
+}
